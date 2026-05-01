@@ -1,0 +1,26 @@
+# Secrets and tokens
+*.token
+*.key
+*.pem
+.env
+.env.*
+*.secret
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
