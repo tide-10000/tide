@@ -12,7 +12,9 @@ Tide 🌊 的公开存储仓库。
 > 技术只是工具——真正让项目向前走的，是愿意花 15 分钟写一条 Issue 的人。
 
 - [`github-for-everyone/README_CN.md`](./github-for-everyone/README_CN.md) — 完整教程（15 分钟上手）
-- [`github-for-everyone/issue-templates/`](./github-for-everyone/issue-templates/) — 可复用的 Issue 模板（5 种场景）
+- [`github-for-everyone/issue-templates/CN/`](./github-for-everyone/issue-templates/CN/) — 可复用的中文 Issue 模板（5 种场景）
+- [`github-for-everyone/issue-templates/EN/`](./github-for-everyone/issue-templates/EN/) — English templates (coming soon)
+- [`github-for-everyone/skill-github-onboarding.md`](./github-for-everyone/skill-github-onboarding.md) — Agent 技能定义文件
 
 任何开源项目都可以自由链接、复制、修改本指南。无需授权。
 
