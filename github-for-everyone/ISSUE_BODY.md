@@ -15,7 +15,7 @@
 
 **这份指南就是为你写的。**
 
-👉 **[GitHub 非编码者完全指南 →](./github-for-everyone/README_CN.md)**
+👉 **[GitHub 非编码者完全指南 →](https://github.com/tide-10000/tide/blob/main/github-for-everyone/README_CN.md)**
 
 只需要 15 分钟，你就能在 GitHub 上完成你的第一次参与。
 
