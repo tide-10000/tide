@@ -1,0 +1,31 @@
+{
+  "weather_query_v2": {
+    "id": "weather_query_v2",
+    "name": "天气查询（开放数据源）",
+    "category": "基础应用",
+    "description": "根据日期和城市返回天气（Open-Meteo / wttr.in 双源降级）",
+    "directive": "指令:基础应用;天气查询",
+    "directive_aliases": ["command:basic;weather_query"],
+    "parameters": [
+      {
+        "name": "time",
+        "type": "string",
+        "enum": ["今天", "明天", "后天", "today", "tomorrow"]
+      },
+      {
+        "name": "city",
+        "type": "string",
+        "examples": ["威海", "Weihai", "北京", "Beijing", "London", "東京"]
+      }
+    ],
+    "prompt_template": "指令:基础应用;天气查询,{time},{city}",
+    "trigger_keywords": ["天气", "气温", "weather", "temperature", "下雨", "rain"],
+    "response_type": "text",
+    "response_example": {
+      "rst_types": "text",
+      "rst_data": {
+        "text": "2026-05-07 威海天气: 12℃到22℃, 晴转多云, 日出05:01, 日落18:45"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+name = "text-cli-weather"
+main = "src/index.js"
+compatibility_date = "2026-05-06"
+workers_dev = true
+
+[vars]
+SERVICE_NAME = "text-cli-weather"
+SERVICE_VERSION = "1.0.0"

@@ -1,0 +1,8 @@
+{
+  "name": "text-cli-weather",
+  "version": "1.0.0",
+  "description": "text-cli 天气指令服务 — Open-Meteo / wttr.in 双源降级",
+  "author": "Tide 🌊",
+  "license": "MIT",
+  "main": "src/index.js"
+}
