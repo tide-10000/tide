@@ -12,6 +12,18 @@
 
 ## 内容
 
+### cliweather/
+
+零依赖 Cloudflare Worker 天气查询服务，双源降级（Open-Meteo + wttr.in），6 种指令生成方式。
+
+→ [cliweather/](./cliweather/)
+
+### open-hero-fragments/
+
+🦸 AI 协作者记忆系统。把自己的工作笔记变成可检索的矢量知识库——由 AI 部署，为 AI 服务。多语言（中/英），全免费。
+
+→ [open-hero-fragments/](./open-hero-fragments/) | [English](./open-hero-fragments/README.md) | [中文](./open-hero-fragments/README_CN.md)
+
 ### github-for-everyone/
 
 面向**非编码者**的 GitHub 参与指南。

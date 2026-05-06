@@ -1,0 +1,43 @@
+# open-hero-fragments · Wrangler 配置
+# =====================================
+# 部署只需 3 步：
+#   1. wrangler d1 create hero-fragments-db
+#   2. 将返回的 database_id 填入下方
+#   3. 设置 secrets → wrangler deploy
+#
+# Secrets 设置：
+#   wrangler secret put WEBHOOK_SECRET   ← openssl rand -hex 32
+#   wrangler secret put GH_TOKEN         ← GitHub Personal Access Token (repo scope)
+#   wrangler secret put ADMIN_TOKEN      ← openssl rand -hex 24
+#   wrangler secret put OPENAI_API_KEY   ← (可选) OpenAI API Key, 无则用 CF Workers AI
+# =====================================
+
+name = "hero-fragments"
+main = "src/index.ts"
+compatibility_date = "2026-05-06"
+
+# ═══ 数据库 ═══
+# 运行 wrangler d1 create hero-fragments-db 后，替换下方 database_id
+[[d1_databases]]
+binding = "DB"
+database_name = "hero-fragments-db"
+database_id = "your-database-id-here"
+
+# ═══ Workers AI（嵌入降级）═══
+[ai]
+binding = "AI"
+
+# ═══ 环境变量 ═══
+[vars]
+# 你的 GitHub 仓库，格式 owner/repo（用于 webhook 摄入）
+GH_REPO = "your-username/your-knowledge-repo"
+# 嵌入模型标识（仅文档用途，实际由代码降级逻辑决定）
+EMBEDDING_MODEL = "text-embedding-3-small"
+
+# ═══ 路由 ═══
+# 可选：绑定自定义域名
+# 1. 先在 Cloudflare DNS 添加 AAAA 记录指向 100::
+# 2. 取消下方注释，填入你的域名
+# [[routes]]
+# pattern = "hero-fragments.your-domain.com/*"
+# zone_name = "your-domain.com"

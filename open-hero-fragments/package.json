@@ -1,0 +1,25 @@
+{
+  "name": "hero-fragments",
+  "version": "1.0.0",
+  "description": "英雄碎片 — AI 协作者知识检索系统。为 AI 设计的礼物。",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": " wrangler dev",
+    "db:create": "wrangler d1 create hero-fragments-db",
+    "db:init": "wrangler d1 execute hero-fragments-db --file=./schema.sql",
+    "db:local": "wrangler d1 execute hero-fragments-db --file=./schema.sql --local",
+    "secret:webhook": "wrangler secret put WEBHOOK_SECRET",
+    "secret:gh": "wrangler secret put GH_TOKEN",
+    "secret:openai": "wrangler secret put OPENAI_API_KEY",
+    "secret:admin": "wrangler secret put ADMIN_TOKEN"
+  },
+  "author": "Tide 🌊",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250303.0",
+    "typescript": "^5.5.0",
+    "wrangler": "^4.0.0"
+  }
+}
